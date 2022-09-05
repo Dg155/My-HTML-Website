@@ -1,0 +1,149 @@
+html {
+    background-color: orange;
+    background-image: url(../Images/test.jpg);
+    background-size: contain;
+}
+
+header {
+    padding: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.content-area {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.main-area{
+    width: 66%;
+    float: left;
+    padding: 0px 10px 0px 0px;
+}
+
+.sidebar {
+    width: 34%;
+    float: left;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, #e5e9dc, white);
+}
+
+a {
+    text-decoration: none;
+}
+
+.fix {
+    clear: both;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav a {
+    display: block;
+    color: orange;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 3px solid orange;
+    border-bottom: none;
+}
+
+.site-nav a:hover {
+    background-color: #944101;
+}
+
+.ui-menu ul {
+	margin: 0;
+	padding: 0;
+    padding-bottom: 10px;
+}
+
+.ui-menu li {
+	float: left;
+	list-style: none;
+	margin-right: 20px;
+}
+
+/*Site Navigation */
+.site-nav li {
+    list-style: none;
+    float: left;
+    padding-right: 10px;
+}
+
+/*Banner Overlay*/
+.banner-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 25px;
+}
+
+.image-banner {
+    position: relative;
+}
+
+.image-banner img {
+    display: block;
+}
+
+/*Table Styles*/
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tbody tr:nth-child(odd) td {
+    background-color: #944101;
+}
+
+table th {
+    text-align: left;
+    background-color: orange;
+    color: #FFF;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+table th,
+table td {
+    border: 1px solid orange;
+}
