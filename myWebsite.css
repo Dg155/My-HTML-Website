@@ -1,3 +1,102 @@
+/* Bounce Animation */
+@-webkit-keyframes fadeBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+
+  40% {
+    transform: translateY(0);
+  }
+
+  55% {
+    transform: translateY(6px);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  85% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+
+  40% {
+    transform: translateY(0);
+  }
+
+  55% {
+    transform: translateY(6px);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  85% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* End Bounce Animation */
+
+/* Fade In Animation */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  10% {
+    opacity: 10%;
+    transform: scale(0.1);
+  }
+
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: scale(0);
+  }
+
+  10% {
+      opacity: 10%;
+      transform: scale(0.1);
+  }
+
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+  
+/* End Bounce Animation */
+
+
 html {
   background-color: #ed8f02;
   line-height: 1.7;
@@ -103,28 +202,28 @@ header p {
 .site-nav ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  float: right;
 }
 
 .site-nav li {
   list-style: none;
-  float: left;
+  align-self: flex-end;
   margin-right: 5px;
-}
-
-.site-nav ul :nth-child(2){
-    animation-delay: 0.5s;
-    -webkit-animation-delay: 0.5s;
+  opacity: 0;
+  animation: fadeBounce 1s forwards;
+  -webkit-animation: fadeBounce 1s forwards;
+  animation-fill-mode: forwards;
 }
 
 .site-nav a {
-   animation: fadeBounce 1s forwards;
-  -webkit-animation: fadeBounce 1s forwards;
   display: block;
   color: #000;
   padding: 10px 20px;
   background-color: #ed8f02;
   transition-property: color, background-color;
-  transition-duration: 2s;
+  transition-duration: 0.7s;
 }
 
 .site-nav a:hover {
@@ -132,7 +231,39 @@ header p {
   color: #ed8f02;
 }
 
+.site-nav li:nth-child(2) {
+  animation-name: fadeBounce;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.site-nav li:nth-child(3) {
+  animation-name: fadeBounce;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.site-nav li:nth-child(4) {
+  animation-name: fadeBounce;
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  -ms-animation-delay: 0.9s;
+  -o-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
 @media screen and (max-width: 1023px) {
+
+  .site-nav ul {
+    float: none;
+  }
+
   .site-nav li {
     width: 50%;
     margin-right: 0;
@@ -143,6 +274,10 @@ header p {
     margin-right: 5px;
     margin-bottom: 5px;
     text-align: center;
+  }
+
+  .hide-medium {
+    display: none;
   }
 }
 
@@ -155,12 +290,12 @@ header p {
 /* End Site Navigation */
 
 .content-area {
-  background-image: linear-gradient(to bottom right, #1e1913, #ed8f10);
-  background-image: -webkit-linear-gradient(to bottom right, #1e1913, #ed8f10);
-  background-image: -moz-linear-gradient(to bottom right, #1e1913, #ed8f10);
-  background-image: -ms-linear-gradient(to bottom right, #1e1913, #ed8f10);
-  background-image: -o-linear-gradient(to bottom right, #1e1913, #ed8f10);
-  background-image: linear-gradient(to bottom right, #1e1913, #ed8f10);
+  background-image: linear-gradient(to bottom right, #1e1913, #ed8f10, #fec007);
+  background-image: -webkit-linear-gradient(to bottom right, #1e1913, #ed8f10, #fec007);
+  background-image: -moz-linear-gradient(to bottom right, #1e1913, #ed8f10, #fec007);
+  background-image: -ms-linear-gradient(to bottom right, #1e1913, #ed8f10, #fec007);
+  background-image: -o-linear-gradient(to bottom right, #1e1913, #ed8f10, #fec007);
+  background-image: linear-gradient(to bottom right, #1e1913, #ed8f10, #fec007);
   padding-bottom: 40px;
   padding-top: 40px;
 }
@@ -223,104 +358,6 @@ header p {
     display: none;
   }
 }
-
-/* Bounce Animation */
-@-webkit-keyframes fadeBounce {
-  0% {
-    opacity: 0;
-    transform: translateY(200%);
-  }
-
-  40% {
-    transform: translateY(0);
-  }
-
-  55% {
-    transform: translateY(6px);
-  }
-
-  70% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  85% {
-    transform: translateY(3px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeBounce {
-  0% {
-    opacity: 0;
-    transform: translateY(200%);
-  }
-
-  40% {
-    transform: translateY(0);
-  }
-
-  55% {
-    transform: translateY(6px);
-  }
-
-  70% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  85% {
-    transform: translateY(3px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* End Bounce Animation */
-
-/* Fade In Animation */
-@-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: scale(0);
-    }
-  
-    10% {
-      opacity: 10%;
-      transform: scale(0.1);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-  }
-  
-  @keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: scale(0);
-    }
-
-    10% {
-        opacity: 10%;
-        transform: scale(0.1);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-  }
-  
-  /* End Bounce Animation */
 
 .fadeIn {
     animation: fadeIn 1s forwards;
@@ -413,7 +450,7 @@ header p {
   width: 8.332%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .row {
     margin-right: -40px;
   }
@@ -605,3 +642,246 @@ footer a {
 .group {
   zoom: 1;
 }
+
+/* Portfolio Page Start */
+
+.borderLine {
+  border-top: 2px dashed rgba(0, 0, 0, 0.35);
+}
+
+h2.gameTitle {
+  font-family: 'Press Start 2P', Arial, sans-serif;
+  font-weight: italic;
+  font-size: 210%;
+  text-align: left;
+  color: #000;
+}
+
+ul.gameInfo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+ul.gameInfo MainInfo {
+  float: left;
+}
+
+ul.gameInfo li {
+  list-style: none;
+  align-self: flex-end;
+  margin-right: 10px;
+  font-size: 110%;
+}
+
+li#Role {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 160%;
+  padding-right: 10px;
+  border-right: 3px solid black;
+}
+
+li#Date {
+  font-weight: bold;
+  padding: 6px 0;
+}
+
+li#Software {
+  font-weight: bold;
+  padding-right: 10px;
+  border-right: 3px solid black;
+}
+
+li#WeeksWorked {
+  font-weight: bold;
+  padding-right: 10px;
+  border-right: 3px solid black;
+}
+
+li#TeamSize {
+  font-weight: bold;
+}
+
+p.gameDescription {
+  font-size: 150%;
+}
+
+.gameButtons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px
+}
+
+.playButton,
+.infoButton {
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #365267;
+  color: #fff;
+  text-align: center;
+  font-size: 100%;
+  box-sizing: border-box;
+  width: 45%;
+}
+
+.playButton:hover,
+.infoButton:hover {
+  background-color: #fff;
+  color: #365267;
+}
+
+.musicalMadness {
+  background-image: linear-gradient(to bottom, #69d7ef, #9054d8);
+  background-image: -webkit-linear-gradient(to bottom, #69d7ef, #9054d8);
+  background-image: -moz-linear-gradient(to bottom, #69d7ef, #9054d8);
+  background-image: -ms-linear-gradient(to bottom, #69d7ef, #9054d8);
+  background-image: -o-linear-gradient(to bottom, #69d7ef, #9054d8);
+  background-image: linear-gradient(to bottom, #69d7ef, #9054d8);
+}
+
+.superSnake {
+  background-image: linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
+}
+
+.paitentZero {
+  background-image: linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
+}
+
+h2.MMTitle {
+  background-image: linear-gradient(to bottom, #38222e, #9054d8);
+  background-image: -webkit-linear-gradient(to bottom, #38222e, #9054d8);
+  background-image: -moz-linear-gradient(to bottom, #38222e, #9054d8);
+  background-image: -ms-linear-gradient(to bottom, #38222e, #9054d8);
+  background-image: -o-linear-gradient(to bottom, #38222e, #9054d8);
+  background-image: linear-gradient(to bottom, #38222e, #9054d8);
+}
+
+h2.SSTitle {
+  background-image: linear-gradient(to bottom, #0db423, #38222e);
+  background-image: -webkit-linear-gradient(to bottom, #0db423, #38222e);
+  background-image: -moz-linear-gradient(to bottom, #0db423, #38222e);
+  background-image: -ms-linear-gradient(to bottom, #0db423, #38222e);
+  background-image: -o-linear-gradient(to bottom, #0db423, #38222e);
+  background-image: linear-gradient(to bottom, #0db423, #38222e);
+}
+
+h2.PZTitle {
+  background-image: linear-gradient(to bottom, #0064a4, #38222e);
+  background-image: -webkit-linear-gradient(to bottom, #0064a4, #38222e);
+  background-image: -moz-linear-gradient(to bottom, #0064a4, #38222e);
+  background-image: -ms-linear-gradient(to bottom, #0064a4, #38222e);
+  background-image: -o-linear-gradient(to bottom, #0064a4, #38222e);
+  background-image: linear-gradient(to bottom, #0064a4, #38222e);
+}
+
+/* Slideshow Start */
+
+.cycle-slideshow {
+  margin-top: 30px;
+}
+
+.slide {
+  width: 100%;
+  position: relative;
+}
+
+.slide img {
+  display: block;
+  width: 100%;
+}
+
+.slide-text {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  width: 100%;
+  height: 20%;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+@media screen and (max-width: 1023px) {
+  .slide-text h4 {
+    font-size: 200%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slide-text {
+    position: static;
+    background-color: #000;
+    height: 100%;
+    padding-bottom: 30px;
+  }
+
+  .slide-text h4 {
+    font-size: 130%;
+  }
+}
+
+.slide-text h4 {
+  margin: 0;
+  margin-top: -10px;
+}
+
+/* Prev and Next Buttons */
+.cycle-prev,
+.cycle-next {
+  position: absolute;
+  top: 40%;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  padding: 1px 10px;
+  display: block;
+  cursor: pointer;
+  font-size: 130%;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.cycle-next {
+  right: 0;
+}
+
+.cycle-slideshow:hover .cycle-prev,
+.cycle-slideshow:hover .cycle-next,
+.cycle-slideshow:hover .slide-text {
+  opacity: 1;
+}
+
+.cycle-pager {
+  position: absolute;
+  top: 20px;
+  z-index: 1003;
+  width: 100%;
+  text-align: center;
+}
+
+.cycle-pager span {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.cycle-pager .cycle-pager-active {
+  background-color: #000;
+}
+
+/* Slideshow End */
+
+/* Portfolio Page End */
