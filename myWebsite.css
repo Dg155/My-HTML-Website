@@ -707,6 +707,9 @@ li#TeamSize {
 
 p.gameDescription {
   font-size: 150%;
+  background-color: rgba(105,215,239, 0.2);
+  border-radius: 15px;
+  padding: 10px 15px;
 }
 
 .gameButtons {
@@ -746,10 +749,47 @@ p.gameDescription {
 
 .superSnake {
   background-image: linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
+  background-image: -webkit-linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
+  background-image: -moz-linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
+  background-image: -ms-linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
+  background-image: -o-linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
+  background-image: linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
 }
 
 .paitentZero {
   background-image: linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
+  background-image: -webkit-linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
+  background-image: -moz-linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
+  background-image: -ms-linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
+  background-image: -o-linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
+  background-image: linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
+}
+
+.FTDC {
+  background-image: linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
+  background-image: -webkit-linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
+  background-image: -moz-linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
+  background-image: -ms-linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
+  background-image: -o-linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
+  background-image: linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
+}
+
+.Daboys {
+  background-image: linear-gradient(to bottom, #3c251a, #513518, #5f4a13, #636210, #5b7c1a, #5a8823, #57952d, #51a239, #67a335, #7aa432, #8ca532, #9ca534);
+  background-image: -webkit-linear-gradient(to bottom, #3c251a, #513518, #5f4a13, #636210, #5b7c1a, #5a8823, #57952d, #51a239, #67a335, #7aa432, #8ca532, #9ca534);
+  background-image: -moz-linear-gradient(to bottom, #3c251a, #513518, #5f4a13, #636210, #5b7c1a, #5a8823, #57952d, #51a239, #67a335, #7aa432, #8ca532, #9ca534);
+  background-image: -ms-linear-gradient(to bottom, #3c251a, #513518, #5f4a13, #636210, #5b7c1a, #5a8823, #57952d, #51a239, #67a335, #7aa432, #8ca532, #9ca534);
+  background-image: -o-linear-gradient(to bottom, #3c251a, #513518, #5f4a13, #636210, #5b7c1a, #5a8823, #57952d, #51a239, #67a335, #7aa432, #8ca532, #9ca534);
+  background-image: linear-gradient(to bottom, #3c251a, #513518, #5f4a13, #636210, #5b7c1a, #5a8823, #57952d, #51a239, #67a335, #7aa432, #8ca532, #9ca534);
+}
+
+.PhantomBeans {
+  background-image: linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
+  background-image: -webkit-linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
+  background-image: -moz-linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
+  background-image: -ms-linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
+  background-image: -o-linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
+  background-image: linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
 }
 
 h2.MMTitle {
@@ -777,6 +817,33 @@ h2.PZTitle {
   background-image: -ms-linear-gradient(to bottom, #0064a4, #38222e);
   background-image: -o-linear-gradient(to bottom, #0064a4, #38222e);
   background-image: linear-gradient(to bottom, #0064a4, #38222e);
+}
+
+h2.FTDCTitle {
+  background-image: linear-gradient(to bottom, #3c251a, #4e903e);
+  background-image: -webkit-linear-gradient(to bottom, #3c251a, #4e903e);
+  background-image: -moz-linear-gradient(to bottom, #3c251a, #4e903e);
+  background-image: -ms-linear-gradient(to bottom, #3c251a, #4e903e);
+  background-image: -o-linear-gradient(to bottom, #3c251a, #4e903e);
+  background-image: linear-gradient(to bottom, #3c251a, #4e903e);
+}
+
+h2.DBTitle {
+  background-image: linear-gradient(to bottom, #27A041, #9CA534);
+  background-image: -webkit-linear-gradient(to bottom, #27A041, #9CA534);
+  background-image: -moz-linear-gradient(to bottom, #27A041, #9CA534);
+  background-image: -ms-linear-gradient(to bottom, #27A041, #9CA534);
+  background-image: -o-linear-gradient(to bottom, #27A041, #9CA534);
+  background-image: linear-gradient(to bottom, #27A041, #9CA534);
+}
+
+h2.PBTitle {
+  background-image: linear-gradient(to bottom, #0C166B, #34071B);
+  background-image: -webkit-linear-gradient(to bottom, #0C166B, #34071B);
+  background-image: -moz-linear-gradient(to bottom, #0C166B, #34071B);
+  background-image: -ms-linear-gradient(to bottom, #0C166B, #34071B);
+  background-image: -o-linear-gradient(to bottom, #0C166B, #34071B);
+  background-image: linear-gradient(to bottom, #0C166B, #34071B);
 }
 
 /* Slideshow Start */
@@ -885,3 +952,37 @@ h2.PZTitle {
 /* Slideshow End */
 
 /* Portfolio Page End */
+
+/* Contact Me Modal Start */
+
+.modal-container {
+  z-index: 100000;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px 50px;
+  width: 25%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* Contact Me Modal End */

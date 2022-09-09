@@ -25,7 +25,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="Boghossian_Daniel.docx.pdf">Resume</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li id="open"><a href="#">Contact Me</a></li>
             </ul>
             </nav>
         </div>
@@ -84,6 +84,33 @@
             </ul>
             <p>&copy; 2022</p>
         </footer>
+
+        <!--Contact Me Modal-->
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+                <h1>Contact Me!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, commodi. Temporibus sit earum ex architecto sint nostrum omnis, commodi dicta qui mollitia natus sequi ullam nam perspiciatis ducimus debitis beatae.</p>
+                <button id="close">Close</button>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            const open = document.getElementById('open');
+            const modal_container = document.getElementById('modal_container');
+            const close = document.getElementById('close');
+
+            console.log(open);
+            console.log(modal_container);
+            console.log(close);
+
+            open.addEventListener('click', () => {
+                modal_container.classList.add('show');
+            })
+
+            close.addEventListener('click', () => {
+                modal_container.classList.remove('show');
+            })
+        </script>
 
     </body>
 
