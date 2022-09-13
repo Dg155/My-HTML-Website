@@ -4,12 +4,30 @@
     <head>
         <meta charset="utf-8">
         <title>Daniels Page</title>
+
+        <!--CSS-->
         <link rel="stylesheet" href="myWebsite.css">
+        <link rel="stylesheet" href="lightbox.css">
+
+        <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <!--Javascript-->
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="cycle2.js"></script>
+        <script type="text/javascript" src="lightbox.min.js"></script>
+        <script defer src="myWebsite.js"></script>
+
+        <!--Meta Data-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Daniel Boghossian Portfolio">
+        <meta name="author" content="Daniel Boghossian">
+        <meta name="keywords" content="Daniel Boghossian, Yale University">
+
+        <!-- Favicon -->
+        <link rel="icon" href="Images/favicon-32x32.png">
     </head>
 
     <body>
@@ -34,6 +52,82 @@
         <!-- /container -->
 
         </header>
+
+        <!-- Cucumber Castle Section-->
+        <div class="content-area group section cucumberCastle">
+
+            <!-- container -->
+            <div class="container">
+    
+                <!-- row -->
+                <div class="row">
+    
+                <!-- col -->
+                <div class="col col-md-8 push-down-sm">
+    
+                    <h2 class="gameTitle CCTitle">Cucumber Castle:</h2>
+    
+                    <ul class="gameInfo group">
+                        <li id="Role">Creator, Developer, Programmer</li>
+                        <li id="Date">July 2022</li>
+                    </ul>
+    
+                    <ul class="gameInfo group">
+                        <li id="Software">(Unreal 5, Blueprints)</li>
+                        <li id="WeeksWorked">Duration: 1 week</li>
+                        <li id="TeamSize">Team Size: 1</li>
+                    </ul>
+    
+                    <p class="gameDescription">Here is my first dip into the vast ocean that is the Unreal Engine. Explore a beautiful 3D medieval forest terrain, created using the new Unreal 5 megascan library, with real-time lighting to bring it to life! Collect cucumbers scattered throughout the map to increase your score and motivate exploration!</p>
+    
+                    <div class="gameButtons">
+                        <a href="https://dg155.itch.io/cucumber-land" class="playButton">Play Now!</a>
+                        <a href="#" class="infoButton">More Info</a>
+                    </div>
+    
+                </div>
+                <!-- /col -->
+    
+                <!-- col -->
+                <div class="col col-md-4 sidebar">
+                    <div class="cycle-slideshow" data-cycle-slides=".slide">
+    
+                        <span class="cycle-prev">&laquo;</span>
+                        <span class="cycle-next">&raquo;</span>
+    
+                        <span class="cycle-pager"></span>
+    
+                        <div class="slide">
+                            <a href="Images/CucumberCastle1.png" data-lightbox="CucumberCastle" data-title="Spawn in a lush and beautiful landscape"><img src="Images/CucumberCastleTab1.png"><img></a>
+                            <div class="slide-text">
+                                <h4>Spawn in a lush and beautiful landscape</h4>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="Images/CucumberCastle2.png" data-lightbox="CucumberCastle" data-title="A striking castle looms over the land!"><img src="Images/CucumberCastleTab2.png"><img></a>
+                            <div class="slide-text">
+                                <h4>A striking castle looms over the land!</h4>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="Images/CucumberCastle3.png" data-lightbox="CucumberCastle" data-title="Find different landmarks throughout the map!"><img src="Images/CucumberCastleTab3.png"><img></a>
+                            <div class="slide-text">
+                                <h4>Find different landmarks throughout the map!</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /col -->
+    
+                </div>
+                <!-- /row -->
+    
+            </div>
+            <!-- /container -->
+    
+        </div>
+    
+        <div class="borderLine"></div>
 
         <!-- Musical Madness Section-->
         <div class="content-area group section musicalMadness">
@@ -80,25 +174,25 @@
                     <span class="cycle-pager"></span>
 
                     <div class="slide">
-                        <img src="Images/MusicalMadness1.png"><img>
+                        <a href="Images/MusicalMadness1.png" data-lightbox="MusicalMadness" data-title="What a colorful title screen~"><img src="Images/MusicalMadness1.png"><img></a>
                         <div class="slide-text">
-                            <h4>The Title Screen of Musical Madness!</h4>
+                            <h4>What a colorful title screen~</h4>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="Images/MusicalMadness2.png"><img>
+                        <a href="Images/MusicalMadness2.png" data-lightbox="MusicalMadness" data-title="This is the first room the player spawns into. Where the journey begins!"><img src="Images/MusicalMadness2.png"><img></a>
                         <div class="slide-text">
                             <h4>This is the first room the player spawns into. Where the journey begins!</h4>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="Images/MusicalMadness3.png"><img>
+                        <a href="Images/MusicalMadness3.png" data-lightbox="MusicalMadness" data-title="Fight against drums and violins!"><img src="Images/MusicalMadness3.png"><img></a>
                         <div class="slide-text">
-                            <h4>Here the player is fighting against the drum and violin enemies</h4>
+                            <h4>Fight against drums and violins!</h4>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="Images/MusicalMadness4.png"><img>
+                        <a href="Images/MusicalMadness4.png" data-lightbox="MusicalMadness" data-title="The Climatic Showdown against the Grand Piano!"><img src="Images/MusicalMadness4.png"><img></a>
                         <div class="slide-text">
                             <h4>The Climatic Showdown against the Grand Piano!</h4>
                         </div>
@@ -162,25 +256,25 @@
                     <span class="cycle-pager"></span>
 
                     <div class="slide">
-                        <img src="Images/SuperSnake1Tab.png"><img>
+                        <a href="Images/SuperSnake1.png" data-lightbox="SuperSnake" data-title="Super Snake Title Screen!"><img src="Images/SuperSnake1Tab.png"><img></a>
                         <div class="slide-text">
                             <h4>Super Snake Title Screen!</h4>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="Images/SuperSnake2Tab.png"><img>
+                        <a href="Images/SuperSnake2.png" data-lightbox="SuperSnake" data-title="A little snakelet about to embark on his feast~"><img src="Images/SuperSnake2Tab.png"><img></a>
                         <div class="slide-text">
                             <h4>A little snakelet about to embark on his feast~</h4>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="Images/SuperSnake3Tab.png"><img>
+                        <a href="Images/SuperSnake3.png" data-lightbox="SuperSnake" data-title="Red Hot Snake from eating a pepper!!"><img src="Images/SuperSnake3Tab.png"><img></a>
                         <div class="slide-text">
                             <h4>Red Hot Snake from eating a pepper!!</h4>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="Images/SuperSnake4Tab.png"><img>
+                        <a href="Images/SuperSnake4.png" data-lightbox="SuperSnake" data-title="Is that an enemy snake that steals your food?"><img src="Images/SuperSnake4Tab.png"><img></a>
                         <div class="slide-text">
                             <h4>Is that an enemy snake that steals your food?</h4>
                         </div>
@@ -244,19 +338,19 @@
                         <span class="cycle-pager"></span>
     
                         <div class="slide">
-                            <img src="Images/PatientZeroTab1.png"><img>
+                            <a href="Images/PatientZero1.png" data-lightbox="PaitentZero" data-title="The Lounge Room, one of the first places the player explores!"><img src="Images/PatientZeroTab1.png"><img></a>
                             <div class="slide-text">
                                 <h4>The Lounge Room, one of the first places the player explores!</h4>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="Images/PatientZeroTab2.png"><img>
+                            <a href="Images/PatientZero2.png" data-lightbox="PaitentZero" data-title="Concept Art for the main testing area."><img src="Images/PatientZeroTab2.png"><img></a>
                             <div class="slide-text">
                                 <h4>Concept Art for the main testing area.</h4>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="Images/PatientZeroTab3.png"><img>
+                            <a href="Images/PatientZero3.png" data-lightbox="PaitentZero" data-title="Looks like someone dropped something!"><img src="Images/PatientZeroTab3.png"><img></a>
                             <div class="slide-text">
                                 <h4>Looks like someone dropped something!</h4>
                             </div>
@@ -320,33 +414,33 @@
                         <span class="cycle-pager"></span>
     
                         <div class="slide">
-                            <img src="Images/FTDCTab1.png"><img>
+                            <a href="Images/FTDC1.png" data-lightbox="FTDC" data-title="A lone soilder in a barren title screen~"><img src="Images/FTDCTab1.png"><img></a>
                             <div class="slide-text">
                                 <h4>A lone soilder in a barren title screen~</h4>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="Images/FTDCTab2.png"><img>
+                            <a href="Images/FTDC2.png" data-lightbox="FTDC" data-title="The first encounter!"><img src="Images/FTDCTab2.png"><img></a>
                             <div class="slide-text">
                                 <h4>The first encounter!</h4>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="Images/FTDCTab3.png"><img>
+                            <a href="Images/FTDC3.png" data-lightbox="FTDC" data-title="Can't be a platformer without platforming ;)"><img src="Images/FTDCTab3.png"><img></a>
+                            <div class="slide-text">
+                                <h4>Can't be a platformer without platforming ;)</h4>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="Images/FTDC4.png" data-lightbox="FTDC" data-title="Through the tunnels you go!"><img src="Images/FTDCTab4.png"><img></a>
                             <div class="slide-text">
                                 <h4>Through the tunnels you go!</h4>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="Images/FTDCTab4.png"><img>
+                            <a href="Images/FTDC5.png" data-lightbox="FTDC" data-title="A glimpse at the final battle!"><img src="Images/FTDCTab5.png"><img></a>
                             <div class="slide-text">
                                 <h4>A glimpse at the final battle!</h4>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="Images/FTDCTab5.png"><img>
-                            <div class="slide-text">
-                                <h4>The Climatic Showdown against the Grand Piano!</h4>
                             </div>
                         </div>
                     </div>
@@ -388,7 +482,7 @@
                         <li id="TeamSize">Team Size: 3</li>
                     </ul>
     
-                    <p class="gameDescription">DaBoys is a 2D Tower Defense game. It was my COVID passtime, and my proudest work. After completing an online course on Unity and C# I created this entire game from scratch, including story, mechanics, and extra game modes. I enlisted help from two of my friends for music and sprites, and in turn decided to make the game about my 4 closest friends and I!</p>
+                    <p class="gameDescription">DaBoys is a 2D Tower Defense game. It was my COVID pastime, and my proudest work. After completing an online course on Unity and C# I created this entire game from scratch, including story, mechanics, and extra game modes. I enlisted help from two of my friends for music and sprites, and in turn decided to make the game about my 4 closest friends and I!</p>
     
                     <div class="gameButtons">
                         <a href="https://sharemygame.com/@Dg155/daboys" class="playButton">Play Now!</a>
@@ -408,31 +502,31 @@
                         <span class="cycle-pager"></span>
     
                         <div class="slide">
-                            <img src="Images/DaBoysTab1.png"><img>
+                            <a href="Images/DaBoys1.png" data-lightbox="DaBoys" data-title="DaBoys Title Screen!"><img src="Images/DaBoysTab1.png"><img></a>
                             <div class="slide-text">
                                 <h4>DaBoys Title Screen!</h4>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="Images/DaBoysTab3.png"><img>
+                            <a href="Images/DaBoys3.png" data-lightbox="DaBoys" data-title="Lining up the boys to take on the oncoming threat!"><img src="Images/DaBoysTab3.png"><img></a>
                             <div class="slide-text">
                                 <h4>Lining up the boys to take on the oncoming threat!</h4>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="Images/DaBoysTab5.png"><img>
+                            <a href="Images/DaBoys5.png" data-lightbox="DaBoys" data-title="A cutscene between levels!"><img src="Images/DaBoysTab5.png"><img></a>
                             <div class="slide-text">
                                 <h4>A cutscene between levels!</h4>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="Images/DaBoysTab6.png"><img>
+                            <a href="Images/DaBoys6.png" data-lightbox="DaBoys" data-title="The End Game! All of the boys all together on one battlefield holding off the enemies that approach."><img src="Images/DaBoysTab6.png"><img></a>
                             <div class="slide-text">
                                 <h4>The End Game! All of the boys all together on one battlefield holding off the enemies that approach.</h4>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="Images/DaBoysTab7.png"><img>
+                            <a href="Images/DaBoys7.png" data-lightbox="DaBoys" data-title="An Encyclopedia detailing each of the characters~"><img src="Images/DaBoysTab7.png"><img></a>
                             <div class="slide-text">
                                 <h4>An Encyclopedia detailing each of the characters~</h4>
                             </div>
@@ -496,13 +590,13 @@
                         <span class="cycle-pager"></span>
     
                         <div class="slide">
-                            <img src="Images/PhantomTab1.png"><img>
+                            <a href="Images/Phantom1.png" data-lightbox="Phantom" data-title="Created for mobile devices ;)"><img src="Images/PhantomTab1.png"><img></a>
                             <div class="slide-text">
                                 <h4>Created for mobile devices ;)</h4>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="Images/PhantomTab2.png"><img>
+                            <a href="Images/Phantom2.png" data-lightbox="Phantom" data-title="Use the Bean-mobile at the bottom to maneuver around and destroy enemies!"><img src="Images/PhantomTab2.png"><img></a>
                             <div class="slide-text">
                                 <h4>Use the Bean-mobile at the bottom to maneuver around and destroy enemies!</h4>
                             </div>
@@ -532,29 +626,31 @@
         <!--Contact Me Modal-->
         <div class="modal-container" id="modal_container">
             <div class="modal">
-                <h1>Contact Me!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, commodi. Temporibus sit earum ex architecto sint nostrum omnis, commodi dicta qui mollitia natus sequi ullam nam perspiciatis ducimus debitis beatae.</p>
-                <button id="close">Close</button>
+                <h1>Send Me a Message!</h1>
+                <div class="contactForm">
+                    <form id="contactMeForm">
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message... </span>
+                        </div>
+                        <div class="contactButtons">
+                            <div class="inputBox">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                            <button id="close">Close</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-
-        <script type="text/javascript">
-            const open = document.getElementById('open');
-            const modal_container = document.getElementById('modal_container');
-            const close = document.getElementById('close');
-
-            console.log(open);
-            console.log(modal_container);
-            console.log(close);
-
-            open.addEventListener('click', () => {
-                modal_container.classList.add('show');
-            })
-
-            close.addEventListener('click', () => {
-                modal_container.classList.remove('show');
-            })
-        </script>
 
     </body>
 

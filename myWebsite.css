@@ -715,7 +715,7 @@ p.gameDescription {
 .gameButtons {
   display: flex;
   justify-content: space-between;
-  margin: 0px 20px
+  margin: 0px 20px;
 }
 
 .playButton,
@@ -792,6 +792,15 @@ p.gameDescription {
   background-image: linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
 }
 
+.cucumberCastle {
+  background-image: linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
+  background-image: -webkit-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
+  background-image: -moz-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
+  background-image: -ms-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
+  background-image: -o-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
+  background-image: linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
+}
+
 h2.MMTitle {
   background-image: linear-gradient(to bottom, #38222e, #9054d8);
   background-image: -webkit-linear-gradient(to bottom, #38222e, #9054d8);
@@ -820,12 +829,12 @@ h2.PZTitle {
 }
 
 h2.FTDCTitle {
-  background-image: linear-gradient(to bottom, #3c251a, #4e903e);
-  background-image: -webkit-linear-gradient(to bottom, #3c251a, #4e903e);
-  background-image: -moz-linear-gradient(to bottom, #3c251a, #4e903e);
-  background-image: -ms-linear-gradient(to bottom, #3c251a, #4e903e);
-  background-image: -o-linear-gradient(to bottom, #3c251a, #4e903e);
-  background-image: linear-gradient(to bottom, #3c251a, #4e903e);
+  background-image: linear-gradient(to bottom, #4e903e, #4e903e, #3c251a, #3c251a, #3c251a);
+  background-image: -webkit-linear-gradient(to bottom, #4e903e, #4e903e, #3c251a, #3c251a, #3c251a);
+  background-image: -moz-linear-gradient(to bottom, #4e903e, #4e903e, #3c251a, #3c251a, #3c251a);
+  background-image: -ms-linear-gradient(to bottom, #4e903e, #4e903e, #3c251a, #3c251a, #3c251a);
+  background-image: -o-linear-gradient(to bottom, #4e903e, #4e903e, #3c251a, #3c251a, #3c251a);
+  background-image: linear-gradient(to bottom, #4e903e, #4e903e, #3c251a, #3c251a, #3c251a);
 }
 
 h2.DBTitle {
@@ -844,6 +853,15 @@ h2.PBTitle {
   background-image: -ms-linear-gradient(to bottom, #0C166B, #34071B);
   background-image: -o-linear-gradient(to bottom, #0C166B, #34071B);
   background-image: linear-gradient(to bottom, #0C166B, #34071B);
+}
+
+h2.CCTitle {
+  background-image: linear-gradient(to bottom, #9b570d, #34071b);
+  background-image: -webkit-linear-gradient(to bottom, #9b570d, #34071b);
+  background-image: -moz-linear-gradient(to bottom, #9b570d, #34071b);
+  background-image: -ms-linear-gradient(to bottom, #9b570d, #34071b);
+  background-image: -o-linear-gradient(to bottom, #9b570d, #34071b);
+  background-image: linear-gradient(to bottom, #9b570d, #34071b);
 }
 
 /* Slideshow Start */
@@ -920,6 +938,20 @@ h2.PBTitle {
   right: 0;
 }
 
+@media screen and (max-width: 1023px) {
+  .cycle-prev,
+  .cycle-next {
+    transform: scale(2.5);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cycle-prev,
+  .cycle-next {
+    transform: scale(2);
+  }
+}
+
 .cycle-slideshow:hover .cycle-prev,
 .cycle-slideshow:hover .cycle-next,
 .cycle-slideshow:hover .slide-text {
@@ -980,9 +1012,108 @@ h2.PBTitle {
   text-align: center;
 }
 
+@media screen and (max-width: 1023px) {
+  .modal {
+    width: 50%;
+  }
+}
+
+.modal h1 {
+  padding: 0;
+  margin: 0;
+}
+
 .modal-container.show {
   pointer-events: auto;
   opacity: 1;
+}
+
+.contactForm {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 100%;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea,
+button#close {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+  box-shadow: 3px 5px #888888;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 18px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactButtons {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 20px;
+  justify-content: space-evenly;
+}
+
+.contactForm .inputBox input[type="Submit"],
+button#close {
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.contactForm .inputBox input[type="Submit"]:hover,
+button#close:hover {
+  background: #666;
+  color: #0C166B;
+  transition: 0.5s;
+}
+
+.contactForm .inputBox input[type="Submit"] {
+  margin-left: -20px;
+}
+
+button#close {
+  margin-left: 30px;
 }
 
 /* Contact Me Modal End */

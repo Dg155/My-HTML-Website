@@ -4,10 +4,27 @@
     <head>
         <meta charset="utf-8">
         <title>Daniels Page</title>
+
+        <!--CSS-->
         <link rel="stylesheet" href="myWebsite.css">
+
+        <!--Javascript-->
+        <script defer src="myWebsite.js"></script>
+
+        <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <!--Meta Data-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Daniel Boghossian Portfolio">
+        <meta name="author" content="Daniel Boghossian">
+        <meta name="keywords" content="Daniel Boghossian, Yale University">
+
+        <!-- Favicon -->
+        <link rel="icon" href="Images/favicon-32x32.png">
+
     </head>
 
     <body>
@@ -88,29 +105,31 @@
         <!--Contact Me Modal-->
         <div class="modal-container" id="modal_container">
             <div class="modal">
-                <h1>Contact Me!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, commodi. Temporibus sit earum ex architecto sint nostrum omnis, commodi dicta qui mollitia natus sequi ullam nam perspiciatis ducimus debitis beatae.</p>
-                <button id="close">Close</button>
+                <h1>Send Me a Message!</h1>
+                <div class="contactForm">
+                    <form id="contactMeForm">
+                        <div class="inputBox">
+                            <input id="name" type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input id="email" type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message... </span>
+                        </div>
+                        <div class="contactButtons">
+                            <div class="inputBox">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                            <button id="close">Close</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-
-        <script type="text/javascript">
-            const open = document.getElementById('open');
-            const modal_container = document.getElementById('modal_container');
-            const close = document.getElementById('close');
-
-            console.log(open);
-            console.log(modal_container);
-            console.log(close);
-
-            open.addEventListener('click', () => {
-                modal_container.classList.add('show');
-            })
-
-            close.addEventListener('click', () => {
-                modal_container.classList.remove('show');
-            })
-        </script>
 
     </body>
 
