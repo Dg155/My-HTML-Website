@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Daniels Page</title>
+
+        <!--CSS-->
+        <link rel="stylesheet" href="myWebsite.css">
+
+        <!--Javascript-->
+        <script defer src="myWebsite.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="cycle2.js"></script>
+        <script type="text/javascript" src="lightbox.min.js"></script>
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <!--Meta Data-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Daniel Boghossian Portfolio">
+        <meta name="author" content="Daniel Boghossian">
+        <meta name="keywords" content="Daniel Boghossian, Yale University">
+
+        <!-- Favicon -->
+        <link rel="icon" href="Images/favicon-32x32.png">
+
+    </head>
+
+    <body>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+        <header class="section">
+
+        <!-- container -->
+        <div class="container">
+            <h1>Daniel Boghossian's Portfolio</h1>
+            <p class="hide-medium">Super Snake!</p>
+
+            <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="Boghossian_Daniel.docx.pdf">Resume</a></li>
+                <li id="open"><a href="#">Contact Me</a></li>
+            </ul>
+            </nav>
+        </div>
+        <!-- /container -->
+
+        </header>
+
+        <div class="content-area group section superSnake1">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+            <!-- col -->
+            <div class="col col-md-12 push-down-sm">
+
+                <h2 class="SSTitle">Super Snake:</h2>
+
+                <ul class="gameMainInfo group">
+                    <li>Creator, Developer, Programmer</li>
+                    <li>January 2022</li>
+                    <li>(Unity, C#)</li>
+                    <li>Duration: 1 weeks</li>
+                    <li id="TeamSize">Team Size: 2</li>
+                </ul>
+
+
+            </div>
+            <!-- /col -->
+
+            </div>
+            <!-- /row -->
+
+            <!-- row -->
+            <div class="row">
+
+            <!-- col -->
+            <div class="col col-md-8 sidebar">
+                <h3>Background:</h3>
+                <p>Over winter break I was out of schooling, which meant no coding assignments. It did provide a brief area of relaxation and free time, however I didn't wanna just use this time up while falling behind on my skills.
+                </p>
+
+                <p>It had been a while since I last made a 2D unity game, so I thought I would give myself a personal game jam to try to make something interesting in one week. I brainstormed many ideas, and a strong contender was to take a classic game and put a unique spin on it.
+                    I thought this would be fun to try, and what game could be more classic than snake? </p>
+
+                <p>I created the sprites myself (as one can tell) using Gimp. My friend and I worked on two tracks together for the game, and the rest came down to the programming!
+                </p>
+            </div>
+            <!-- /col -->
+
+            <!-- /col -->
+            <div class="col col-md-4 sideimage">
+                <img src="Images/OGSnake.png"><img>
+            </div>
+
+            </div>
+            <!-- /row -->
+
+            <!-- row -->
+            <div class="row">
+
+                <!-- /col -->
+                <div class="col col-md-4 sideimage">
+                    <img src="Images/SuperSnake2Tab.png"><img>
+                </div>
+
+                <!-- col -->
+                <div class="col col-md-8 sidebar">
+                    <h3>Learning Experiences:</h3>
+                    <p>At first I was not sure where to even begin. Coding the snake would be the most logical starting position, but the spawning of food felt like an easier way to begin figuring out the games structure.
+                        I knew I needed a grind system because the snake travels in squares, and experimenting with the food made me realize what a powerful tool Mathf.Round can be.
+                    </p>
+    
+                    <p>I sanctioned the play space into a grind by allowing the snake and food to only appear on whole number positions using Mathf.Round. After basic input and collider code I had the main mechanics finished, I just needed to add the body.
+                        For that I used a List in C#, and stored each new fragment of the snake as an object in the list. Once the snake ate the food all I had to do was push back in fragment in the list (minus the head) and append a new fragment to the missing spot!
+                    </p>
+    
+                    <p>The biggest impact from this project was that it strengthened my creative skills. It was the first time I brainstormed an idea for a game and its mechanics and coded them all from scratch. 
+                        I also became more familiar with data structures and operational functions within C#.
+                    </p>
+                </div>
+                <!-- /col -->
+                
+            </div>
+            <!-- /row -->
+
+            <!-- row -->
+            <div class="row">
+
+                <!-- col -->
+                <div class="col col-md-8 sidebar">
+                    <h3>Conclusion:</h3>
+                    <p>It was not the hardest nor most impactful project I have worked on, but it was really fun. And honestly, that is what game development is about. It is nice to have the creative freedom to create whatever you want from scratch, and once it is finally made there is this pride within you. YOU built this.
+                    </p>
+    
+                    <p>When I created this project I had never done an official game jam before. I was worried how stressful they could be, trying to create a game with such a short amount of time. However I was able to create snake all by myself in a week, and I was able to add special fruits with special powers too!
+                        I left this project feeling much more confident in myself and much more open to participating in game jams in the future. </p>
+    
+                </div>
+                <!-- /col -->
+
+                <!-- /col -->
+                <div class="col col-md-4 sideimage">
+                    <img src="Images/SuperSnake4Tab.png"><img>
+                </div>
+                
+            </div>
+            <!-- /row -->
+
+        </div>
+        <!-- /container -->
+
+        </div>
+
+        <footer>
+            <ul class="group container">
+                <li class="linkedIn col col-xs-3"><a href="https://www.linkedin.com/in/daniel-boghossian-41521a211/">linkedIn</a></li>
+                <li class="itchio col col-xs-3"><a href="https://dg155.itch.io/">Itchio</a></li>
+                <li class="gitHub col col-xs-3"><a href="https://github.com/Dg155">gitHub</a></li>
+                <li class="email col col-xs-3"><a href="mailto:danielboghoss@gmail.com">Email Me</a></li>
+            </ul>
+            <p>&copy; 2022</p>
+        </footer>
+
+        <!--Contact Me Modal-->
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+                <h1>Send Me a Message!</h1>
+                <div class="contactForm">
+                    <form id="contactMeForm">
+                        <div class="inputBox">
+                            <input id="name" type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input id="email" type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message... </span>
+                        </div>
+                        <div class="contactButtons">
+                            <div class="inputBox">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                            <button id="close">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+
+</html>

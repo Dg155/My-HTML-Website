@@ -346,6 +346,10 @@ header p {
     font-size: 130%;
 }
 
+.sideimage {
+  margin-top: 40px;
+}
+
 .info-box {
   background-color: #efeedb;
   border: 5px solid #e6e5c2;
@@ -611,9 +615,9 @@ footer a {
 
 .linkedIn a:hover {background-position: 0 -30px;}
 
-.instagram a {background-position: -30px 0;}
+.itchio a {background-position: -30px 0;}
 
-.instagram a:hover {background-position: -30px -30px;}
+.itchio a:hover {background-position: -30px -30px;}
 
 .gitHub a {background-position: -60px 0;} 
 
@@ -665,8 +669,22 @@ ul.gameInfo {
   margin-bottom: 20px;
 }
 
-ul.gameInfo MainInfo {
-  float: left;
+ul.gameMainInfo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+ul.gameMainInfo li {
+  list-style: none;
+  margin-right: 10px;
+  font-size: 110%;
+  font-weight: bold;
+  padding-right: 10px;
+  border-right: 3px solid black;
 }
 
 ul.gameInfo li {
@@ -703,6 +721,7 @@ li#WeeksWorked {
 
 li#TeamSize {
   font-weight: bold;
+  border-right: none;
 }
 
 p.gameDescription {
@@ -756,6 +775,15 @@ p.gameDescription {
   background-image: linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
 }
 
+.superSnake1 {
+  background-image: linear-gradient(to bottom, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74);
+  background-image: -webkit-linear-gradient(to bottom, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74);
+  background-image: -moz-linear-gradient(to bottom, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74);
+  background-image: -ms-linear-gradient(to bottom, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74);
+  background-image: -o-linear-gradient(to bottom, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74);
+  background-image: linear-gradient(to bottom, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74);
+}
+
 .paitentZero {
   background-image: linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
   background-image: -webkit-linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
@@ -772,6 +800,15 @@ p.gameDescription {
   background-image: -ms-linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
   background-image: -o-linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
   background-image: linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
+}
+
+.FTDC1 {
+  background-image: linear-gradient(to bottom, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
+  background-image: -webkit-linear-gradient(to bottom, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
+  background-image: -moz-linear-gradient(to bottom, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
+  background-image: -ms-linear-gradient(to bottom, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
+  background-image: -o-linear-gradient(to bottom, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
+  background-image: linear-gradient(to bottom, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
 }
 
 .Daboys {
@@ -792,6 +829,15 @@ p.gameDescription {
   background-image: linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
 }
 
+.PhantomBeans1 {
+  background-image: linear-gradient(to bottom, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
+  background-image: -webkit-linear-gradient(to bottom, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
+  background-image: -moz-linear-gradient(to bottom, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
+  background-image: -ms-linear-gradient(to bottom, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
+  background-image: -o-linear-gradient(to bottom, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
+  background-image: linear-gradient(to bottom, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
+}
+
 .cucumberCastle {
   background-image: linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
   background-image: -webkit-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
@@ -799,6 +845,15 @@ p.gameDescription {
   background-image: -ms-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
   background-image: -o-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
   background-image: linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
+}
+
+.cucumberCastle1 {
+  background-image: linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c);
+  background-image: -webkit-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c);
+  background-image: -moz-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c);
+  background-image: -ms-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c);
+  background-image: -o-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c);
+  background-image: linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c);
 }
 
 h2.MMTitle {
