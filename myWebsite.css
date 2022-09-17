@@ -140,6 +140,10 @@ a {
 }
 
 /* Main Column Typography */
+
+.whiteText {
+  color: white;
+}
 .main-area h2 {
   font-size: 165%;
   font-weight: normal;
