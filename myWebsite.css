@@ -832,6 +832,7 @@ p.gameDescription {
 }
 
 .PhantomBeans {
+  display: none;
   background-image: linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
   background-image: -webkit-linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
   background-image: -moz-linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);

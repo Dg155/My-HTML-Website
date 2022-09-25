@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Daniels Page</title>
+
+        <!--CSS-->
+        <link rel="stylesheet" href="myWebsite.css">
+
+        <!--Javascript-->
+        <script defer src="myWebsite.js"></script>
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <!--Meta Data-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Daniel Boghossian Portfolio">
+        <meta name="author" content="Daniel Boghossian">
+        <meta name="keywords" content="Daniel Boghossian, Yale University">
+
+        <!-- Favicon -->
+        <link rel="icon" href="Images/favicon-32x32.png">
+
+    </head>
+
+    <body>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+        <header class="section">
+
+        <!-- container -->
+        <div class="container">
+            <h1>Daniel Boghossian's Portfolio</h1>
+            <p class="hide-medium">Welcome to my Page!</p>
+
+            <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Boghossian_Daniel.docx.pdf">Resume</a></li>
+                <li id="open"><a href="#">Contact Me</a></li>
+            </ul>
+            </nav>
+        </div>
+        <!-- /container -->
+
+        </header>
+
+        <div class="content-area group section">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+            <!-- col -->
+            <div class="col col-md-8 push-down-sm">
+
+                <h2>#1 HIGH SCORE:</h2>
+
+                <img class="fadeIn" src="Images/DanielFrame.png"><img>
+
+            </div>
+            <!-- /col -->
+
+            <!-- col -->
+            <div class="col col-md-4 sidebar">
+                <h3>About Me:</h3>
+                <p>Hello! I am Daniel Boghossian, a skillful and industrious college student working on a degree in computer science/game development. Ever since I was a child playing on my old Nintendo DS I knew that I wanted to create video games for a living.
+                    My goal is to be able to provide children with the same joy and comfort I felt when I first started playing video games. 
+                </p>
+
+                <p>My heart is set on Game development, however my strong suit lies in programming. I learned my first coding language in 8th grade, sparking my aspiration to create the mechanics and software elements required to give the games life.
+                    Being able to create something with my own hands, especially something that runs on technology and inculcates the advancement of the human race is an art form that I wish to devote the rest of my life too. </p>
+
+                <p>Since that first coding class I have learned half a dozen coding languages and created half a dozen games. Everyday I strive to learn something new and to advance my skills and broaden my horizons.
+                    I will make an impact on the world.
+                </p>
+            </div>
+            <!-- /col -->
+
+            </div>
+            <!-- /row -->
+
+        </div>
+        <!-- /container -->
+
+        </div>
+
+        <footer>
+            <ul class="group container">
+                <li class="linkedIn col col-xs-3"><a href="https://www.linkedin.com/in/daniel-boghossian-41521a211/">linkedIn</a></li>
+                <li class="itchio col col-xs-3"><a href="https://dg155.itch.io/">Itchio</a></li>
+                <li class="gitHub col col-xs-3"><a href="https://github.com/Dg155">gitHub</a></li>
+                <li class="email col col-xs-3"><a href="mailto:danielboghoss@gmail.com">Email Me</a></li>
+            </ul>
+            <p>&copy; 2022</p>
+        </footer>
+
+        <!--Contact Me Modal-->
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+                <h1>Send Me a Message!</h1>
+                <div class="contactForm">
+                    <form id="contactMeForm">
+                        <div class="inputBox">
+                            <input id="name" type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input id="email" type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message... </span>
+                        </div>
+                        <div class="contactButtons">
+                            <div class="inputBox">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                            <button id="close">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+
+</html>
