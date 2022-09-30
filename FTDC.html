@@ -33,19 +33,18 @@
     <body>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
-        <header class="section">
+        <header class="section" title="Daniel's Portfolio">
 
         <!-- container -->
         <div class="container">
             <h1>Daniel Boghossian's Portfolio</h1>
-            <p class="hide-medium">Fight to Destory Communism!</p>
 
             <nav class="site-nav">
             <ul>
                 <li><a href="index.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="Boghossian_Daniel.docx.pdf">Resume</a></li>
-                <li class="open"><a href="#">Contact Me</a></li>
+                <li id="open"><a href="#">Contact Me</a></li>
             </ul>
             </nav>
         </div>
@@ -188,20 +187,23 @@
                 <div class="contactForm">
                     <form id="contactMeForm">
                         <div class="inputBox">
-                            <input id="name" type="text" name="" required="required">
+                            <label for="fullname1" class="hide">Full Name:</label>
+                            <input type="text" name="fullname" id="fullname1" required="required">
                             <span>Full Name</span>
                         </div>
                         <div class="inputBox">
-                            <input id="email" type="text" name="" required="required">
+                            <label for="email1" class="hide">Email:</label>
+                            <input type="text" name="email" id="email1" required="required">
                             <span>Email</span>
                         </div>
                         <div class="inputBox">
-                            <textarea required="required"></textarea>
+                            <label for="message1" class="hide">Type Message:</label>
+                            <textarea name="message" id="message1" required="required"></textarea>
                             <span>Type your Message... </span>
                         </div>
                         <div class="contactButtons">
                             <div class="inputBox">
-                                <input type="submit" name="" value="Send">
+                                <input type="submit" value="Send">
                             </div>
                             <button id="close">Close</button>
                         </div>

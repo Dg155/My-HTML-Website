@@ -30,12 +30,11 @@
     <body>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
-        <header class="section">
+        <header class="section" title="Daniel's Portfolio">
 
         <!-- container -->
         <div class="container">
             <h1>Daniel Boghossian's Portfolio</h1>
-            <p class="hide-medium">Welcome to my Page!</p>
 
             <nav class="site-nav">
             <ul>
@@ -113,15 +112,18 @@
                 <div class="contactForm">
                     <form id="contactMeForm">
                         <div class="inputBox">
-                            <input id="name" type="text" required="required">
+                            <label for="fullname1" class="hide">Full Name:</label>
+                            <input type="text" name="fullname" id="fullname1" required="required">
                             <span>Full Name</span>
                         </div>
                         <div class="inputBox">
-                            <input id="email" type="text" required="required">
+                            <label for="email1" class="hide">Email:</label>
+                            <input type="text" name="email" id="email1" required="required">
                             <span>Email</span>
                         </div>
                         <div class="inputBox">
-                            <textarea required="required"></textarea>
+                            <label for="message1" class="hide">Type Message:</label>
+                            <textarea name="message" id="message1" required="required"></textarea>
                             <span>Type your Message... </span>
                         </div>
                         <div class="contactButtons">

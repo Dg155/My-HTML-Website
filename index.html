@@ -33,12 +33,11 @@
     <body>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
-        <header class="section">
+        <header class="section" title="Daniel's Portfolio">
 
         <!-- container -->
         <div class="container">
             <h1>Daniel Boghossian's Portfolio</h1>
-            <p class="hide-medium">Here are all my Projects!</p>
 
             <nav class="site-nav">
             <ul>
@@ -545,76 +544,6 @@
     
         </div>
 
-        <div class="borderLine"></div>
-
-        <!-- PhantomBeans Section-->
-        <div class="content-area group section PhantomBeans">
-
-            <!-- container -->
-            <div class="container">
-    
-                <!-- row -->
-                <div class="row">
-    
-                <!-- col -->
-                <div class="col col-md-8 push-down-sm">
-    
-                    <h2 class="gameTitle PBTitle">The Phantom Beans:</h2>
-    
-                    <ul class="gameInfo group">
-                        <li class="Role">Creator, Developer, Programmer</li>
-                        <li class="Date">June 2020</li>
-                    </ul>
-    
-                    <ul class="gameInfo group">
-                        <li class="Software">(Unity, C#)</li>
-                        <li class="WeeksWorked">Duration: 1 weeks</li>
-                        <li class="TeamSize">Team Size: 1</li>
-                    </ul>
-    
-                    <p class="gameDescription">After my friend wrote an extremely satire, yet awesome, story about our highschool in the Star Wars universe, I thought it would be perfect to transform into a game. I was taking a course learning Unity and through the course they taught us to create a top-down space shooter. I reskinned it and added a few elemets to relfect the story my friend wrote!</p>
-    
-                    <div class="gameButtons">
-                        <a href="https://sharemygame.com/@Dg155/phantombeans" class="playButton">Play Now!</a>
-                        <a href="phantomBeans.html" class="infoButton">More Info</a>
-                    </div>
-    
-                </div>
-                <!-- /col -->
-    
-                <!-- col -->
-                <div class="col col-md-4 sidebar">
-                    <div class="cycle-slideshow" data-cycle-slides=".slide">
-    
-                        <span class="cycle-prev">&laquo;</span>
-                        <span class="cycle-next">&raquo;</span>
-    
-                        <span class="cycle-pager"></span>
-    
-                        <div class="slide">
-                            <a href="Images/Phantom1.png" data-lightbox="Phantom" data-title="Created for mobile devices ;)"><img src="Images/PhantomTab1.png" alt="First screenshot of Phantom Beans"></a>
-                            <div class="slide-text">
-                                <h4>Created for mobile devices ;)</h4>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <a href="Images/Phantom2.png" data-lightbox="Phantom" data-title="Use the Bean-mobile at the bottom to maneuver around and destroy enemies!"><img src="Images/PhantomTab2.png" alt="Second screenshot of Phantom Beans"></a>
-                            <div class="slide-text">
-                                <h4>Use the Bean-mobile at the bottom to maneuver around and destroy enemies!</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /col -->
-    
-                </div>
-                <!-- /row -->
-    
-            </div>
-            <!-- /container -->
-    
-        </div>
-
         </article>
 
         <footer>
@@ -634,15 +563,18 @@
                 <div class="contactForm">
                     <form id="contactMeForm">
                         <div class="inputBox">
-                            <input type="text" required="required">
+                            <label for="fullname1" class="hide">Full Name:</label>
+                            <input type="text" name="fullname" id="fullname1" required="required">
                             <span>Full Name</span>
                         </div>
                         <div class="inputBox">
-                            <input type="text" required="required">
+                            <label for="email1" class="hide">Email:</label>
+                            <input type="text" name="email" id="email1" required="required">
                             <span>Email</span>
                         </div>
                         <div class="inputBox">
-                            <textarea required="required"></textarea>
+                            <label for="message1" class="hide">Type Message:</label>
+                            <textarea name="message" id="message1" required="required"></textarea>
                             <span>Type your Message... </span>
                         </div>
                         <div class="contactButtons">
