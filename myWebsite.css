@@ -850,7 +850,11 @@ h2.MMTitle {
 }
 
 h2.SSTitle {
-  background-color: #035407;
+  background-image: linear-gradient(to bottom, #035407, #3c251a);
+  background-image: -webkit-linear-gradient(to bottom, #035407, #3c251a);
+  background-image: -moz-linear-gradient(to bottom, #035407, #3c251a);
+  background-image: -ms-linear-gradient(to bottom, #035407, #3c251a);
+  background-image: -o-linear-gradient(to bottom, #035407, #3c251a);
 }
 
 h2.PZTitle {
