@@ -583,7 +583,7 @@ header p {
 footer {
   text-align: center;
   font-size: 85%;
-  color: #000;
+  color: #a7a9be;
   padding-bottom: 20px;
   padding-top: 20px;
 }
@@ -720,7 +720,7 @@ li.WeeksWorked {
   border-right: 3px solid black;
 }
 
-li.TeamSize {
+li.TeamSize, .gameMainInfo li.TeamSize {
   font-weight: bold;
   border-right: none;
 }
@@ -732,7 +732,21 @@ p.gameDescription {
   padding: 10px 15px;
 }
 
-.gameDescription {
+.gameInfoDescription p {
+  color: #000;
+  font-size: 150%;
+}
+
+h6 {
+  color: #000;
+  font-size: 200%;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 7px;
+  margin-top: 20px;
+}
+
+.gameDescription, .gameInfoDescription {
   background-color: rgba(105,215,239, 0.2);
   border-radius: 15px;
   padding: 10px 15px;
@@ -770,16 +784,14 @@ p.gameDescription {
   background-image: -moz-linear-gradient(to bottom, #69d7ef, #9054d8);
   background-image: -ms-linear-gradient(to bottom, #69d7ef, #9054d8);
   background-image: -o-linear-gradient(to bottom, #69d7ef, #9054d8);
-  background-image: linear-gradient(to bottom, #69d7ef, #9054d8);
 }
 
 .superSnake {
-  background-image: linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
-  background-image: -webkit-linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
-  background-image: -moz-linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
-  background-image: -ms-linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
-  background-image: -o-linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
-  background-image: linear-gradient(to bottom, #9054d8, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74, #95908d);
+  background-image: linear-gradient(to bottom, #36c73d, #05960c);
+  background-image: -webkit-linear-gradient(to bottom, #36c73d, #05960c);
+  background-image: -moz-linear-gradient(to bottom, #36c73d, #05960c);
+  background-image: -ms-linear-gradient(to bottom, #36c73d, #05960c);
+  background-image: -o-linear-gradient(to bottom, #36c73d, #05960c);
 }
 
 .superSnake1 {
@@ -788,43 +800,30 @@ p.gameDescription {
   background-image: -moz-linear-gradient(to bottom, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74);
   background-image: -ms-linear-gradient(to bottom, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74);
   background-image: -o-linear-gradient(to bottom, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74);
-  background-image: linear-gradient(to bottom, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74);
 }
 
 .paitentZero {
-  background-image: linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
-  background-image: -webkit-linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
-  background-image: -moz-linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
-  background-image: -ms-linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
-  background-image: -o-linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
-  background-image: linear-gradient(to bottom, #95908d, #a88379, #9c71d9, #9c71d9, #9c71d9, #7782ef, #719df6, #7db5f7, #98cbf5, #bddef2);
+  background-image: linear-gradient(to bottom, #9054d8, #69d7ef);
+  background-image: -webkit-linear-gradient(to bottom, #9054d8, #69d7ef);
+  background-image: -moz-linear-gradient(to bottom, #9054d8, #69d7ef);
+  background-image: -ms-linear-gradient(to bottom, #9054d8, #69d7ef);
+  background-image: -o-linear-gradient(to bottom, #9054d8, #69d7ef);
 }
 
 .FTDC {
-  background-image: linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
-  background-image: -webkit-linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
-  background-image: -moz-linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
-  background-image: -ms-linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
-  background-image: -o-linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
-  background-image: linear-gradient(to bottom, #bddef2, #00b589, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
-}
-
-.FTDC1 {
-  background-image: linear-gradient(to bottom, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
-  background-image: -webkit-linear-gradient(to bottom, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
-  background-image: -moz-linear-gradient(to bottom, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
-  background-image: -ms-linear-gradient(to bottom, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
-  background-image: -o-linear-gradient(to bottom, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
-  background-image: linear-gradient(to bottom, #38a362, #4e903e, #4e903e, #5b7c1a, #5b7c1a, #636210, #5f4a13, #513518, #3c251a);
+  background-image: linear-gradient(to bottom, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #3c251a);
+  background-image: -webkit-linear-gradient(to bottom, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #3c251a);
+  background-image: -moz-linear-gradient(to bottom, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #3c251a);
+  background-image: -ms-linear-gradient(to bottom, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #3c251a);
+  background-image: -o-linear-gradient(to bottom, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #3c251a);
 }
 
 .Daboys {
-  background-image: linear-gradient(to bottom, #3c251a, #513518, #5f4a13, #636210, #5b7c1a, #5a8823, #57952d, #51a239, #67a335, #7aa432, #8ca532, #9ca534);
-  background-image: -webkit-linear-gradient(to bottom, #3c251a, #513518, #5f4a13, #636210, #5b7c1a, #5a8823, #57952d, #51a239, #67a335, #7aa432, #8ca532, #9ca534);
-  background-image: -moz-linear-gradient(to bottom, #3c251a, #513518, #5f4a13, #636210, #5b7c1a, #5a8823, #57952d, #51a239, #67a335, #7aa432, #8ca532, #9ca534);
-  background-image: -ms-linear-gradient(to bottom, #3c251a, #513518, #5f4a13, #636210, #5b7c1a, #5a8823, #57952d, #51a239, #67a335, #7aa432, #8ca532, #9ca534);
-  background-image: -o-linear-gradient(to bottom, #3c251a, #513518, #5f4a13, #636210, #5b7c1a, #5a8823, #57952d, #51a239, #67a335, #7aa432, #8ca532, #9ca534);
-  background-image: linear-gradient(to bottom, #3c251a, #513518, #5f4a13, #636210, #5b7c1a, #5a8823, #57952d, #51a239, #67a335, #7aa432, #8ca532, #9ca534);
+  background-image: linear-gradient(to bottom, #57952d, #57952d, #284d0f);
+  background-image: -webkit-linear-gradient(to bottom, #57952d, #57952d, #284d0f);
+  background-image: -moz-linear-gradient(to bottom, #57952d, #57952d, #284d0f);
+  background-image: -ms-linear-gradient(to bottom, #57952d, #57952d, #284d0f);
+  background-image: -o-linear-gradient(to bottom, #57952d, #57952d, #284d0f);
 }
 
 .PhantomBeans {
@@ -834,34 +833,14 @@ p.gameDescription {
   background-image: -moz-linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
   background-image: -ms-linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
   background-image: -o-linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
-  background-image: linear-gradient(to bottom, #9ca534, #7e3c23, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
-}
-
-.PhantomBeans1 {
-  background-image: linear-gradient(to bottom, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
-  background-image: -webkit-linear-gradient(to bottom, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
-  background-image: -moz-linear-gradient(to bottom, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
-  background-image: -ms-linear-gradient(to bottom, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
-  background-image: -o-linear-gradient(to bottom, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
-  background-image: linear-gradient(to bottom, #612123, #571425, #4b0827, #3c0129, #3e0036, #3b0146, #300a58, #0c166b);
 }
 
 .cucumberCastle {
-  background-image: linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
-  background-image: -webkit-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
-  background-image: -moz-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
-  background-image: -ms-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
-  background-image: -o-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
-  background-image: linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c, #69d7ef);
-}
-
-.cucumberCastle1 {
-  background-image: linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c);
-  background-image: -webkit-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c);
-  background-image: -moz-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c);
-  background-image: -ms-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c);
-  background-image: -o-linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c);
-  background-image: linear-gradient(to bottom, #976d18, #c39016, #c39016, #c1a81f, #c1a81f, #bbc032, #bbc032, #b0d84c, #b0d84c);
+  background-image: linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
+  background-image: -webkit-linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
+  background-image: -moz-linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
+  background-image: -ms-linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
+  background-image: -o-linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
 }
 
 h2.MMTitle {
@@ -870,43 +849,34 @@ h2.MMTitle {
   background-image: -moz-linear-gradient(to bottom, #38222e, #9054d8);
   background-image: -ms-linear-gradient(to bottom, #38222e, #9054d8);
   background-image: -o-linear-gradient(to bottom, #38222e, #9054d8);
-  background-image: linear-gradient(to bottom, #38222e, #9054d8);
 }
 
 h2.SSTitle {
-  background-image: linear-gradient(to bottom, #0db423, #38222e);
-  background-image: -webkit-linear-gradient(to bottom, #0db423, #38222e);
-  background-image: -moz-linear-gradient(to bottom, #0db423, #38222e);
-  background-image: -ms-linear-gradient(to bottom, #0db423, #38222e);
-  background-image: -o-linear-gradient(to bottom, #0db423, #38222e);
-  background-image: linear-gradient(to bottom, #0db423, #38222e);
+  background-color: #035407;
 }
 
 h2.PZTitle {
-  background-image: linear-gradient(to bottom, #0064a4, #38222e);
-  background-image: -webkit-linear-gradient(to bottom, #0064a4, #38222e);
-  background-image: -moz-linear-gradient(to bottom, #0064a4, #38222e);
-  background-image: -ms-linear-gradient(to bottom, #0064a4, #38222e);
-  background-image: -o-linear-gradient(to bottom, #0064a4, #38222e);
-  background-image: linear-gradient(to bottom, #0064a4, #38222e);
+  background-image: linear-gradient(to bottom, #38222e, #0064a4);
+  background-image: -webkit-linear-gradient(to bottom, #38222e, #0064a4);
+  background-image: -moz-linear-gradient(to bottom, #38222e, #0064a4);
+  background-image: -ms-linear-gradient(to bottom, #38222e, #0064a4);
+  background-image: -o-linear-gradient(to bottom, #38222e, #0064a4);
 }
 
 h2.FTDCTitle {
-  background-image: linear-gradient(to bottom, #4e903e, #4e903e, #3c251a, #3c251a, #3c251a);
-  background-image: -webkit-linear-gradient(to bottom, #4e903e, #4e903e, #3c251a, #3c251a, #3c251a);
-  background-image: -moz-linear-gradient(to bottom, #4e903e, #4e903e, #3c251a, #3c251a, #3c251a);
-  background-image: -ms-linear-gradient(to bottom, #4e903e, #4e903e, #3c251a, #3c251a, #3c251a);
-  background-image: -o-linear-gradient(to bottom, #4e903e, #4e903e, #3c251a, #3c251a, #3c251a);
-  background-image: linear-gradient(to bottom, #4e903e, #4e903e, #3c251a, #3c251a, #3c251a);
+  background-image: linear-gradient(to bottom, #57952d, #4e903e);
+  background-image: -webkit-linear-gradient(to bottom, #57952d, #4e903e);
+  background-image: -moz-linear-gradient(to bottom, #57952d, #4e903e);
+  background-image: -ms-linear-gradient(to bottom, #57952d, #4e903e);
+  background-image: -o-linear-gradient(to bottom, #57952d, #4e903e);
 }
 
 h2.DBTitle {
-  background-image: linear-gradient(to bottom, #27A041, #9CA534);
-  background-image: -webkit-linear-gradient(to bottom, #27A041, #9CA534);
-  background-image: -moz-linear-gradient(to bottom, #27A041, #9CA534);
-  background-image: -ms-linear-gradient(to bottom, #27A041, #9CA534);
-  background-image: -o-linear-gradient(to bottom, #27A041, #9CA534);
-  background-image: linear-gradient(to bottom, #27A041, #9CA534);
+  background-image: linear-gradient(to bottom, #035407, #053b07);
+  background-image: -webkit-linear-gradient(to bottom, #035407, #053b07);
+  background-image: -moz-linear-gradient(to bottom, #035407, #053b07);
+  background-image: -ms-linear-gradient(to bottom, #035407, #053b07);
+  background-image: -o-linear-gradient(to bottom, #035407, #053b07);
 }
 
 h2.PBTitle {
@@ -915,16 +885,14 @@ h2.PBTitle {
   background-image: -moz-linear-gradient(to bottom, #0C166B, #34071B);
   background-image: -ms-linear-gradient(to bottom, #0C166B, #34071B);
   background-image: -o-linear-gradient(to bottom, #0C166B, #34071B);
-  background-image: linear-gradient(to bottom, #0C166B, #34071B);
 }
 
 h2.CCTitle {
-  background-image: linear-gradient(to bottom, #9b570d, #34071b);
-  background-image: -webkit-linear-gradient(to bottom, #9b570d, #34071b);
-  background-image: -moz-linear-gradient(to bottom, #9b570d, #34071b);
-  background-image: -ms-linear-gradient(to bottom, #9b570d, #34071b);
-  background-image: -o-linear-gradient(to bottom, #9b570d, #34071b);
-  background-image: linear-gradient(to bottom, #9b570d, #34071b);
+  background-image: linear-gradient(to bottom, #7d3f20, #542108);
+  background-image: -webkit-linear-gradient(to bottom, #7d3f20, #542108);
+  background-image: -moz-linear-gradient(to bottom, #7d3f20, #542108);
+  background-image: -ms-linear-gradient(to bottom, #7d3f20, #542108);
+  background-image: -o-linear-gradient(to bottom, #7d3f20, #542108);
 }
 
 /* Slideshow Start */
