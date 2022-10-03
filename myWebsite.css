@@ -352,6 +352,14 @@ header p {
 
 .sideimage {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .sidebar {
+    width: 100%;
+  }
 }
 
 .info-box {
@@ -416,6 +424,12 @@ header p {
 .row {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .row {
+    display: block;
+  }
 }
 
 .col {
@@ -785,12 +799,40 @@ h6 {
   color: #365267;
 }
 
+.cucumberCastle {
+  background-image: linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
+  background-image: -webkit-linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
+  background-image: -moz-linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
+  background-image: -ms-linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
+  background-image: -o-linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
+  border-radius: 15px;
+  padding: 20px 25px;
+  opacity: 0;
+  animation: fadeBounce 1s forwards;
+  -webkit-animation: fadeBounce 1s forwards;
+  animation-fill-mode: forwards;
+}
+
 .musicalMadness {
   background-image: linear-gradient(to bottom, #69d7ef, #9054d8);
   background-image: -webkit-linear-gradient(to bottom, #69d7ef, #9054d8);
   background-image: -moz-linear-gradient(to bottom, #69d7ef, #9054d8);
   background-image: -ms-linear-gradient(to bottom, #69d7ef, #9054d8);
   background-image: -o-linear-gradient(to bottom, #69d7ef, #9054d8);
+  border-radius: 15px;
+  padding: 20px 25px;
+  opacity: 0;
+  animation: fadeBounce 1s forwards;
+  -webkit-animation: fadeBounce 1s forwards;
+  animation-fill-mode: forwards;
+}
+
+.MMdelay {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .superSnake {
@@ -799,6 +841,21 @@ h6 {
   background-image: -moz-linear-gradient(to bottom, #36c73d, #05960c);
   background-image: -ms-linear-gradient(to bottom, #36c73d, #05960c);
   background-image: -o-linear-gradient(to bottom, #36c73d, #05960c);
+  border-radius: 15px;
+  padding: 20px 25px;
+  opacity: 0;
+  animation: fadeBounce 1s forwards;
+  -webkit-animation: fadeBounce 1s forwards;
+  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.SSdelay {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .superSnake1 {
@@ -807,6 +864,12 @@ h6 {
   background-image: -moz-linear-gradient(to bottom, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74);
   background-image: -ms-linear-gradient(to bottom, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74);
   background-image: -o-linear-gradient(to bottom, #5cac4e, #5cac4e, #5cac4e, #5cac4e, #7ea525, #7ea525, #9c9b3c, #9c9b3c, #a99358, #a99358, #a78f74, #a78f74);
+  border-radius: 15px;
+  padding: 20px 25px;
+  opacity: 0;
+  animation: fadeBounce 1s forwards;
+  -webkit-animation: fadeBounce 1s forwards;
+  animation-fill-mode: forwards;
 }
 
 .paitentZero {
@@ -815,6 +878,20 @@ h6 {
   background-image: -moz-linear-gradient(to bottom, #9054d8, #69d7ef);
   background-image: -ms-linear-gradient(to bottom, #9054d8, #69d7ef);
   background-image: -o-linear-gradient(to bottom, #9054d8, #69d7ef);
+  border-radius: 15px;
+  padding: 20px 25px;
+  opacity: 0;
+  animation: fadeBounce 1s forwards;
+  -webkit-animation: fadeBounce 1s forwards;
+  animation-fill-mode: forwards;
+}
+
+.PZdelay {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .FTDC {
@@ -823,6 +900,20 @@ h6 {
   background-image: -moz-linear-gradient(to bottom, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #3c251a);
   background-image: -ms-linear-gradient(to bottom, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #3c251a);
   background-image: -o-linear-gradient(to bottom, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #5f4a13, #3c251a);
+  border-radius: 15px;
+  padding: 20px 25px;
+  opacity: 0;
+  animation: fadeBounce 1s forwards;
+  -webkit-animation: fadeBounce 1s forwards;
+  animation-fill-mode: forwards;
+}
+
+.FTDCdelay {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  -ms-animation-delay: 0.8s;
+  -o-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 .Daboys {
@@ -831,14 +922,20 @@ h6 {
   background-image: -moz-linear-gradient(to bottom, #57952d, #57952d, #284d0f);
   background-image: -ms-linear-gradient(to bottom, #57952d, #57952d, #284d0f);
   background-image: -o-linear-gradient(to bottom, #57952d, #57952d, #284d0f);
+  border-radius: 15px;
+  padding: 20px 25px;
+  opacity: 0;
+  animation: fadeBounce 1s forwards;
+  -webkit-animation: fadeBounce 1s forwards;
+  animation-fill-mode: forwards;
 }
 
-.cucumberCastle {
-  background-image: linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
-  background-image: -webkit-linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
-  background-image: -moz-linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
-  background-image: -ms-linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
-  background-image: -o-linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
+.DBdelay {
+  -webkit-animation-delay: 1.0s;
+  -moz-animation-delay: 1.0s;
+  -ms-animation-delay: 1.0s;
+  -o-animation-delay: 1.0s;
+  animation-delay: 1.0s;
 }
 
 h2.MMTitle {
@@ -920,12 +1017,6 @@ h2.CCTitle {
 }
 
 @media screen and (max-width: 1023px) {
-  .slide-text h4 {
-    font-size: 200%;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .slide-text {
     position: static;
     background-color: #000;
@@ -933,6 +1024,12 @@ h2.CCTitle {
     padding-bottom: 30px;
   }
 
+  .slide-text h4 {
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .slide-text h4 {
     font-size: 130%;
   }
@@ -961,20 +1058,6 @@ h2.CCTitle {
 
 .cycle-next {
   right: 0;
-}
-
-@media screen and (max-width: 1023px) {
-  .cycle-prev,
-  .cycle-next {
-    transform: scale(2.5);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .cycle-prev,
-  .cycle-next {
-    transform: scale(2);
-  }
 }
 
 .cycle-slideshow:hover .cycle-prev,
