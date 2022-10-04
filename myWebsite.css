@@ -799,6 +799,16 @@ h6 {
   color: #365267;
 }
 
+.border {
+  background-color: #1d1b2b;
+  border-radius: 15px;
+  padding: 20px 25px;
+  opacity: 0;
+  animation: fadeBounce 1s forwards;
+  -webkit-animation: fadeBounce 1s forwards;
+  animation-fill-mode: forwards;
+}
+
 .cucumberCastle {
   background-image: linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
   background-image: -webkit-linear-gradient(to bottom, #976d18, #d19a30, #d19a30, #d19a30, #f3cc3c);
