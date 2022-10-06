@@ -308,7 +308,6 @@ header p {
 
 .content-area h2 {
     font-family: 'Press Start 2P', Arial, sans-serif;
-    font-weight: italic;
     font-size: 210%;
     text-align: center;
     background-color: #fffffe;
@@ -674,7 +673,6 @@ footer a {
 
 h2.gameTitle {
   font-family: 'Press Start 2P', Arial, sans-serif;
-  font-weight: italic;
   font-size: 210%;
   text-align: left;
   color: #000;
