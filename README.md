@@ -46,4 +46,13 @@ Here is my portfolio website I created using HTML/CSS/JS!
 
 
 6. Is there anything special we need to know in order to run your code?
-  Nope! Just open the index.html and you're good to go :)
+  When my website is checked by the validators:
+    1. W3C is passed
+    2. With Wave there were 3 major errors, however those errors are out of my control as they deal with javascript files I have imported. One is missing alt text for 
+    an image that is not even viewable on the website, and the other 2 are empty links which again are not visible. The 12 contrast errors are due to minor
+    inconveniences such as the small dots near the top of the slideshows or the buttons near the bottom of my page which do have good contrast but are not picked up
+    from the validator.
+    3. For AChecker, the only known problems deal with my headers, however I am not sure why they appear nor how to fix them. They state that I am using an h2 header 
+    where only h3 headers are allowed but once I switch the headers to h3 it results in more errors. I believe I used the headers correctly so I am not sure why this 
+    error even appears but it seems to be minor, I hope it is something we can disregard.
+  
