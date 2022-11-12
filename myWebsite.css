@@ -704,6 +704,18 @@ ul.gameMainInfo li {
   border-right: 3px solid black;
 }
 
+@media screen and (max-width: 539px) {
+  ul.gameMainInfo {
+    transform: scale(0.75);
+  }
+}
+
+@media screen and (max-width: 281px) {
+  ul.gameMainInfo {
+    transform: scale(0.5);
+  }
+}
+
 ul.gameInfo li {
   list-style: none;
   align-self: flex-end;
