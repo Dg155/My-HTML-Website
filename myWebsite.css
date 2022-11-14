@@ -706,7 +706,7 @@ ul.gameMainInfo li {
 
 @media screen and (max-width: 539px) {
   ul.gameMainInfo {
-    transform: scale(0.75);
+    transform: scale(0.65);
   }
 }
 
@@ -717,6 +717,7 @@ ul.gameMainInfo li {
 }
 
 ul.gameInfo li {
+  font-weight: bold;
   list-style: none;
   align-self: flex-end;
   margin-right: 10px;
@@ -728,31 +729,26 @@ ul.gameInfo li.Role {
 }
 
 li.Role {
-  font-weight: bold;
   font-style: italic;
   padding-right: 10px;
   border-right: 3px solid black;
 }
 
 li.Date {
-  font-weight: bold;
   padding: 6px 0;
 }
 
 li.Software {
-  font-weight: bold;
   padding-right: 10px;
   border-right: 3px solid black;
 }
 
 li.WeeksWorked {
-  font-weight: bold;
   padding-right: 10px;
   border-right: 3px solid black;
 }
 
 li.TeamSize, .gameMainInfo li.TeamSize {
-  font-weight: bold;
   border-right: none;
 }
 
