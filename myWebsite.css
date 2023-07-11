@@ -102,7 +102,7 @@
 
 
 html {
-  background-color: #0f0e17;
+  background-image: linear-gradient(to right bottom, #000000, #1c1c1c, #323232, #4E4E4E,#323232, #1c1c1c, #000000);
   line-height: 1.7;
 }
 
@@ -184,7 +184,7 @@ a {
 header {
   padding-top: 50px;
   color: #fff;
-  background: #ed8f02 url(Images/Poster.jpg) bottom;
+  background: #ed8f02 url(Images/spaceback.jpg) bottom;
   background-size: cover;
 }
 
@@ -203,6 +203,23 @@ header p {
   font-size: 90%;
   color: #fffffe;
   margin: 0;
+}
+
+.headerLogo{
+  padding-left: 30px; 
+}
+
+.headerLogo:hover{
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.LogoAnimation{
+  animation: fadeIn 1s forwards;
+}
+
+.invisible{
+  display: none;
 }
 
 /* Site Navigation */
@@ -301,7 +318,6 @@ header p {
 /* End Site Navigation */
 
 .content-area {
-  background-color: #0f0e17;
   padding-bottom: 40px;
   padding-top: 40px;
 }
